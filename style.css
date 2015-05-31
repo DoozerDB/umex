@@ -1045,7 +1045,9 @@ object {
 .maincontainer a {
 	color: #0ea0c3;
 }
-
+.maincontainer a:hover {
+	color: #097C98;
+}
 
 .mainslider {
 	width: 75%;
@@ -1318,12 +1320,12 @@ footer {
 .footer_col2 {
 	float: left;
 	width: 25%;
-	/*text-align: left;*/
+	margin-left: 5vw;
 }
 
 .footer_col3 {
 	float: right;
-	width: 25%;
+	width: 18%;
 	/*text-align: right;*/
 }
 
@@ -1384,6 +1386,60 @@ address {
 .footer_third_block .contactphone:hower {
 	text-decoration: none;
 	color: #ccc;
+}
+
+.footer_col2 h3 {
+	margin: 0vw 0vw 0vw 1vw;
+	font-size: 1.3vw;
+	font-weight: 600;
+}
+
+.footer_col2 > ul {
+	margin: 0vw 0vw 1vw 1vw;
+	padding: 0vw;
+	font-size: 1.1vw;
+	font-weight: 400;
+	list-style: outside none none;
+}
+
+.footer_col2 > ul a{
+	color: #DDD;
+}
+.footer_col2 > ul a:hover{
+	color: #097C98;
+}
+
+.footer_col2 li>ul{
+	list-style: outside none none;
+	margin: 0vw 0vw 0vw 1.3vw;
+	padding: 0vw;
+}
+
+.footer_col3 h3 {
+	margin: 0vw 0vw 0vw 1vw;
+	font-size: 1.3vw;
+	font-weight: 600;
+}
+
+.footer_col3 ul {
+	margin: 0vw 0vw 1vw 1vw;
+	padding: 0vw;
+	font-size: 1.1vw;
+	font-weight: 400;
+	list-style: outside none none;
+}
+
+.footer_col3 ul a{
+	color: #DDD;
+}
+.footer_col3 ul a:hover{
+	color: #097C98;
+}
+
+.footer_col3 li ul{
+	list-style: outside none none;
+	margin: 0vw 0vw 0vw 1.3vw;
+	padding: 0vw;
 }
 
 /*--- special div class ---*/

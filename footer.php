@@ -35,9 +35,20 @@
 					</div>
 					<div class="clear" style="margin-bottom: 2vw;"></div>
 				</div>
+			</div>
 			<div class="footer_col2" role="info">
+				<?php
+					if ( is_active_sidebar( 'footerinfo2' ) ) {
+						dynamic_sidebar( 'footerinfo2' );
+					}
+				?>
 			</div>
 			<div class="footer_col3" role="info">
+				<?php
+					if ( is_active_sidebar( 'footerinfo3' ) ) {
+						dynamic_sidebar( 'footerinfo3' );
+					}
+				?>
 			</div>
 			<div class="clear"></div>
 		</div>
