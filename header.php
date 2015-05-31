@@ -84,7 +84,7 @@
 						<a href="#contact_form_pop" class="fancybox"><form><button>Задать вопрос</button></form></a><br/>
 						<div style="display:none" class="fancybox-hidden">
 							<div id="contact_form_pop">
-								<?php echo do_shortcode('[contact-form-7 id="85"]'); ?>
+								<?php echo do_shortcode('[contact-form-7 id="4"]'); ?>
 							</div>
 						</div>
 						<a href="#contact_form_pop2" class="fancybox">

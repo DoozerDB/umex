@@ -927,6 +927,7 @@ object {
 }
 
 .col3 h1 {
+	text-align: center;
 	font-size: 2vw;
 }
 
@@ -1299,8 +1300,11 @@ footer {
 }
 
 /*--- информация в футере ---*/
+#colophon {
+	background: #0EA0C3 none repeat scroll 0% 0%;
+}
+
 .bottom-container{
-	background: #0EA0C3;
 	position: relative;
 	padding: 0.5vw 1vw;
 	color: #fff;
@@ -1323,11 +1327,63 @@ footer {
 	/*text-align: right;*/
 }
 
-
 address {
-	margin: 1vw 0vw 2vw;
+	text-align: center;
+	margin: 0vw;
 	font-weight: 600;
 	font-size: 30px;
+}
+
+.footer_first_block {
+	float: left;
+	width: 33%;
+}
+.footer_second_block {
+	text-align: center;
+	float: left;
+	width: 33%;
+}
+
+.footer_third_block {
+	text-align: right;
+	float: right;
+	width: 33%;
+}
+
+.footer_first_block .contactphone {
+	font-weight: 400;
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.2;
+}
+.footer_first_block .contactphone:hower {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.footer_second_block .contactphone {
+	font-weight: 400;
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.2;
+}
+.footer_second_block .contactphone:hower {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.footer_third_block .contactphone {
+	font-weight: 400;
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.2;
+}
+.footer_third_block .contactphone:hower {
+	text-decoration: none;
+	color: #ccc;
 }
 
 /*--- special div class ---*/
