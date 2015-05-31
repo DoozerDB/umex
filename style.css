@@ -1,0 +1,1336 @@
+@import "catalog.css";
+/*
+Theme Name: Umex
+Theme URI: http://umex-service.ru/
+Author: PKKA
+Author URI:
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: umex
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Umex is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a {
+}
+
+.main-navigation ul ul :hover > a {
+}
+
+.main-navigation ul ul a:hover {
+}
+
+.main-navigation ul li:hover > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+### Umex
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic);
+
+#page{
+	margin: 0vw 8vw;
+	background: #fff;
+	box-shadow: 0px 0px 6vw rgba(0, 0, 0, 1);
+}
+
+.site-branding {
+	font-family: 'Fira Sans', sans-serif;
+  /*background: #0050be;*/ /* Для старых браузров */
+  background: #fff; /*linear-gradient(to top, #0050be, #0080ff);*/
+  padding: 1vw;
+  /*border-bottom: 3px solid #8FBDC9;/*5px solid #00438c;*/
+	color: #000; /*#fff;*/
+	line-height: 1;
+}
+
+.col1 {
+	/*position: relative;*/
+	float: left;
+	width: 36%;
+}
+
+.col2 {
+	float: left;
+	/*left: 37%;*/
+	width: 38%;
+	text-align: left;
+}
+
+.col3 {
+	float: right;
+	/*right: 0;*/
+	width: 26%;
+	text-align: right;
+}
+
+.col3 h1 {
+	font-size: 2vw;
+}
+
+.site-branding h1 {
+	margin: 0vw 1vw 0vw 0vw;
+}
+
+.site-branding h2 {
+	margin: 1vw 2vw;
+}
+
+.site-title a {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 4px 4px 5px #00388e;
+	text-decoration: none;
+}
+
+.site-description {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-shadow: 2px 2px 3px #00388e;
+}
+
+.phones {
+	pisition: relative;
+}
+
+.first_block {
+	float: left;
+	width: 49%;
+}
+.second_block {
+	margin-left: 51%;
+	/*right: 0;
+	width: 49%;*/
+}
+
+.contactphone {
+	font-weight: 700;
+	font-size: 1.6vw;
+	text-decoration: none;
+	color: #000;
+	line-height: 1.2;
+}
+.contactphone:hower {
+	text-decoration: none;
+	color: #222;
+}
+
+.timetable {
+	text-align: left;
+	padding: 1vw;
+	margin: 1vw;
+	border: solid 1px;
+	border-radius: 5px;
+	border-color: #0ea0c3;
+}
+
+.timetable h4 {
+	text-align: center;
+	padding: 0vw;
+	margin: 0vw;
+}
+
+/*--- меню навигации ---*/
+.main-navigation {
+    background: #0EA0C3; /* Для старых браузров */
+    /*background: linear-gradient(to top, #fff, #f0f0f0);*/
+    /*margin: 0em 3ex 0em;*/
+    /*border-bottom: 5px solid #ccc;*/
+    padding: 0.5vw 1vw;
+}
+
+.sub-menu {
+    background: #0EA0C3; /* Для старых браузров */
+    /*background: linear-gradient(to top, #fff, #f0f0f0);*/
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+
+.main-navigation li {
+	margin: 0vw 2vw;
+}
+
+.main-navigation li a {
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 23px;
+	color: #FFF;
+}
+
+/*--- контейнер со слайдером и важными кнопками---*/
+.maincontainer {
+	position: relative;
+	padding: 0vw 1vw;
+	/*margin: 0vw 2vw;*/
+	color: #fff;
+	line-height: 1;
+	float: left;
+	width: 100%;
+}
+
+.maincontainer div {
+
+}
+
+.maincontainer a {
+	color: #0ea0c3;
+}
+
+
+.mainslider {
+	width: 75%;
+}
+
+.maininfo {
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	margin: 1vw 0vw;
+	/*border: solid 2px;
+	border-radius: 7px;
+	border-color: #0ea0c3;*/
+	right: 2vw;
+	position: absolute;
+	padding: 1vw;
+	color: #000;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+button{
+	color: #FFF;
+	font-weight: 300;
+	font-size: 23px;
+	text-decoration: none;
+	padding: .8em 1em calc(.8em + 3px);
+	border: solid 2px rgba(255,255,255,1);
+	border-radius: 5px;
+	background: #0ea0c3;
+	box-shadow: 0 -3px #196375 inset;
+	text-shadow: none;
+	transition: 0.2s;
+	width: 100%;
+}
+
+.white{
+	color: #0ea0c3;
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration: none;
+	padding: .8em 1em;
+	border: solid 2px;
+	border-radius: 5px;
+	background: #FFF;
+	box-shadow: none;
+	text-shadow: none;
+	transition: 0.2s;
+	width: 100%;
+}
+
+button:hover {
+	background: #2eb8b3;
+	box-shadow: 0 -3px #196375 inset;
+	border: solid 2px rgba(255,255,255,1);
+}
+button:active {
+	  background: rgb(33,147,90);
+	  box-shadow: 0 3px rgb(33,147,90) inset;
+		border: solid 2px rgba(255,255,255,1);
+}
+
+.white:hover {
+	border: solid 2px rgba(255,255,255,1);
+}
+
+/*--- слайдер непосредственно ---*/
+#main-slider {
+	margin:0vw 2vw;
+    padding: 0.5vw 1vw;
+}
+
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+  }
+
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+.rslides_container {
+	margin: 1vw 0vw;
+	position: relative;
+	float: left;
+	/*width: 100%;*/
+}
+
+.rslides_nav {
+	z-index: 3;
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 50%;
+	left: 0;
+	/*opacity: 0.7;*/
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 61px;
+	width: 38px;
+	background: transparent url("sliderbuttons/g3863.png") no-repeat left top;
+	margin-top: -55px;
+}
+
+.rslides_nav:active {
+	opacity: 1.0;
+}
+
+.rslides_nav.next {
+	left: auto;
+	background-position: right top;
+	right: 0;
+}
+
+.rslides_nav:focus {
+	outline: none;
+}
+
+.rslides_tabs {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.rslides_tabs li {
+	display: inline;
+	float: none;
+	_float: left;
+	*float: left;
+	margin-right: 5px;
+}
+
+.rslides_tabs a{
+	text-indent: -9999px;
+	overflow: hidden;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #ccc;
+	background: rgba(0,0,0, .2);
+	display: inline-block;
+	_display: block;
+	*display: block;
+	-webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+	box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+	width: 9px;
+	height: 9px;
+}
+
+.rslides_here a {
+	background: #222;
+	background: rgba(0,0,0, .8);
+}
+
+.caption {
+	position: absolute;
+	display: block;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	text-align: center;
+	background: #000;
+	background: #0EA0C3;
+	color: #fff;
+}
+
+/*--- Контент ---*/
+#content {
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin: 0vw 2vw;
+	padding: 0.5vw 1vw;
+}
+
+h1.entry-title {
+	display: flex;
+	align-items: center;
+	color: #0EA0C3;
+	font-size: 2em;
+	margin-bottom: 1.5rem;
+}
+
+/* Actual line */
+h1.entry-title::after {
+	content: '';
+	flex: 1 0 auto;
+	margin-left: 0.5em;
+	height: 2px;
+	background: currentcolor;
+}
+
+.entry-content{
+	font-size: 1.2rem;
+}
+
+.column {
+	-webkit-column-width: 25vw;
+	-moz-column-width: 25vw;
+	column-width: 25vw;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 2vw;
+	-moz-column-gap: 2vw;
+	column-gap: 2vw;
+	/*-webkit-column-rule: 1px solid #0EA0C3;
+	-moz-column-rule: 1px solid #0EA0C3;
+	column-rule: 1px solid #0EA0C3;*/
+}
+
+.column .entry-content {
+	margin: 0;
+}
+
+.column .entry-content .p{
+	margin: 0;
+}
+
+
+/*--- футер ---*/
+footer {
+	/*font-family: 'Fira Sans', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*--- информация в футере ---*/
+.bottom-container{
+	background: #0EA0C3;
+	position: relative;
+	padding: 0.5vw 1vw;
+	color: #fff;
+}
+
+.footer_col1 {
+	float: left;
+	width: 50%;
+}
+
+.footer_col2 {
+	float: left;
+	width: 25%;
+	/*text-align: left;*/
+}
+
+.footer_col3 {
+	float: right;
+	width: 25%;
+	/*text-align: right;*/
+}
+
+
+address {
+	margin: 1vw 0vw 2vw;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+/*--- special div class ---*/
+.clear{
+    clear: both;
+}
