@@ -988,6 +988,7 @@ object {
 	border: solid 1px;
 	border-radius: 5px;
 	border-color: #0ea0c3;
+	font-size: 1vw;
 }
 
 .timetable h4 {
