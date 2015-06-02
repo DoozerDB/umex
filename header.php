@@ -90,7 +90,7 @@
 							</form>
 							<div style="display:none" class="fancybox-hidden">
 								<div id="contact_form_pop2">
-									<?php echo do_shortcode('[contact-form-7 id="86"]'); ?>
+									<?php echo do_shortcode('[contact-form-7 id="8"]'); ?>
 								</div>
 							</div>
 						</a></br>

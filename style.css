@@ -558,7 +558,8 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	/*width: 200px;*/
+	width: 30vw;
 }
 
 .main-navigation ul ul li {
@@ -566,20 +567,25 @@ a:active {
 }
 
 .main-navigation li:hover > a {
+	color: #097C98;
 }
 
 .main-navigation ul ul :hover > a {
+	color: #097C98;
 }
 
 .main-navigation ul ul a:hover {
+	color: #097C98;
 }
 
 .main-navigation ul li:hover > ul {
 	left: auto;
+	color: #097C98;	
 }
 
 .main-navigation ul ul li:hover > ul {
 	left: 100%;
+	color: #097C98;	
 }
 
 .main-navigation .current_page_item > a,
@@ -1300,9 +1306,6 @@ h1.entry-title::after {
 	-webkit-column-gap: 2vw;
 	-moz-column-gap: 2vw;
 	column-gap: 2vw;
-	/*-webkit-column-rule: 1px solid #0EA0C3;
-	-moz-column-rule: 1px solid #0EA0C3;
-	column-rule: 1px solid #0EA0C3;*/
 }
 
 .column .entry-content {
@@ -1333,18 +1336,18 @@ footer {
 
 .footer_col1 {
 	float: left;
-	width: 50%;
+	width: 45%;
 }
 
 .footer_col2 {
 	float: left;
 	width: 25%;
-	margin-left: 5vw;
+	margin-left: 4vw;
 }
 
 .footer_col3 {
 	float: right;
-	width: 18%;
+	width: 22%;
 	/*text-align: right;*/
 }
 
@@ -1409,14 +1412,14 @@ address {
 
 .footer_col2 h3 {
 	margin: 0vw 0vw 0vw 1vw;
-	font-size: 1.3vw;
+	font-size: 1vw;
 	font-weight: 600;
 }
 
 .footer_col2 > ul {
 	margin: 0vw 0vw 1vw 1vw;
 	padding: 0vw;
-	font-size: 1.1vw;
+	font-size: 0.8vw;
 	font-weight: 400;
 	list-style: outside none none;
 }
@@ -1436,14 +1439,14 @@ address {
 
 .footer_col3 h3 {
 	margin: 0vw 0vw 0vw 1vw;
-	font-size: 1.3vw;
+	font-size: 1vw;
 	font-weight: 600;
 }
 
 .footer_col3 ul {
 	margin: 0vw 0vw 1vw 1vw;
 	padding: 0vw;
-	font-size: 1.1vw;
+	font-size: 0.8vw;
 	font-weight: 400;
 	list-style: outside none none;
 }
