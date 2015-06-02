@@ -35,18 +35,13 @@
 				<div class="col2">
 					<div class="phones">
 						<div class="first_block">
+						</div>
+						<div class="second_block">
 							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone','' ); ?>"><?php echo get_theme_mod( 'umex_phone','' ); ?></a></br>
 							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone1','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone1','' ); ?>"><?php echo get_theme_mod( 'umex_phone1','' ); ?></a></br>
 							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone2','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone2','' ); ?>"><?php echo get_theme_mod( 'umex_phone2','' ); ?></a></br>
 							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone3','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone3','' ); ?>"><?php echo get_theme_mod( 'umex_phone3','' ); ?></a></br>
 							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone4','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone4','' ); ?>"><?php echo get_theme_mod( 'umex_phone4','' ); ?></a></br>
-						</div>
-						<div class="second_block">
-							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone5','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone5','' ); ?>"><?php echo get_theme_mod( 'umex_phone5','' ); ?></a></br>
-							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone6','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone6','' ); ?>"><?php echo get_theme_mod( 'umex_phone6','' ); ?></a></br>
-							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone7','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone7','' ); ?>"><?php echo get_theme_mod( 'umex_phone7','' ); ?></a></br>
-							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone8','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone8','' ); ?>"><?php echo get_theme_mod( 'umex_phone8','' ); ?></a></br>
-							<a class="contactphone" href="tel: <?php echo get_theme_mod( 'umex_phone9','' ); ?>" title="<?php echo get_theme_mod( 'umex_phone9','' ); ?>"><?php echo get_theme_mod( 'umex_phone9','' ); ?></a></br>
 						</div>
 						<div class="clear"></div>
 					</div>

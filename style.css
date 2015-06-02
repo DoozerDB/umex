@@ -1268,6 +1268,24 @@ h1.entry-title::after {
 	background: currentcolor;
 }
 
+.first_media {
+	float: left;
+	width: 49%;
+}
+.second_media {
+	/*text-align: right;*/
+	float: right;
+	width: 49%;
+}
+
+/*.first_media img {
+	width: 49%;
+}
+.second_media img {
+	width: 49%;
+}*/
+
+
 .entry-content{
 	font-size: 1.2rem;
 }

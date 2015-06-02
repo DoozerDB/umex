@@ -8,21 +8,25 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<!-- втыкаем перед заголовком два столбца для двух роликов или картинок -->
-	<?php if (is_front_page ()):?>
-		<div class="container">
-			<div class="first_media">
-			</div>
-			<div class="second_media">
-			</div>
-			<div class="clear"></div>
-		</div>
-	<?php endif; ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	
+
 	<?php if (is_front_page ()):?>
+		<div class="container">
+			<div class="first_media">
+				<?php if ( get_theme_mod('first_pic') ) : ?>
+					<img  src="<?php echo esc_url(get_theme_mod('first_pic')); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="second_media">
+				<?php if ( get_theme_mod('second_pic') ) : ?>
+					<img  src="<?php echo esc_url(get_theme_mod('second_pic')); ?>" />
+				<?php endif; ?>
+			</div>
+			<div class="clear"></div>
+		</div>
 		<div class="column">
 	<?php endif; ?>
 	

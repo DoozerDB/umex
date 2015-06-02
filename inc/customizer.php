@@ -37,7 +37,7 @@ function umex_customize_register( $wp_customize ) {
             $wp_customize,
             'site_logo',
             array(
-               'label'          => __( 'Загрузите кортинку с логотипом', 'umex' ),
+               'label'          => __( 'Загрузите изображение с логотипом', 'umex' ),
                'type'           => 'image',
                'section'        => 'umex_general',
                'settings'       => 'site_logo',
@@ -283,7 +283,63 @@ function umex_customize_register( $wp_customize ) {
 						'type' => 'text',
 				)
 		);
+
+    /*--- секция для добавления картинок ---*/
+    $wp_customize->add_section(
+        'umex_pics',
+        array(
+            'title' => __('Картинки на главной', 'umex'),
+            'priority' => 39,
+        )
+    );
+    /*--- первая картинка ---*/
+    $wp_customize->add_setting(
+        'first_pic',
+        array(
+            'default-image' => '',
+            'sanitize_callback' => 'esc_url_raw',
+
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'first_pic',
+            array(
+               'label'          => __( 'Загрузите первое изображение', 'umex' ),
+               'type'           => 'image',
+               'section'        => 'umex_pics',
+               'settings'       => 'first_pic',
+               'priority' => 40,
+            )
+        )
+    );
+    /*--- вторая картинка ---*/
+    $wp_customize->add_setting(
+        'second_pic',
+        array(
+            'default-image' => '',
+            'sanitize_callback' => 'esc_url_raw',
+
+        )
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'second_pic',
+            array(
+               'label'          => __( 'Загрузите второе изображение', 'umex' ),
+               'type'           => 'image',
+               'section'        => 'umex_pics',
+               'settings'       => 'second_pic',
+               'priority' => 41,
+            )
+        )
+    );
 }
+
+
+
 add_action( 'customize_register', 'umex_customize_register' );
 
 /**
