@@ -580,12 +580,12 @@ a:active {
 
 .main-navigation ul li:hover > ul {
 	left: auto;
-	color: #097C98;	
+	color: #097C98;
 }
 
 .main-navigation ul ul li:hover > ul {
 	left: 100%;
-	color: #097C98;	
+	color: #097C98;
 }
 
 .main-navigation .current_page_item > a,
@@ -1467,4 +1467,8 @@ address {
 /*--- special div class ---*/
 .clear{
     clear: both;
+}
+
+.factoid {
+	color: #008CAE;
 }
